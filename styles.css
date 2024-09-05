@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#etch-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 900px;
+    margin: 100px auto;
+    border: 3px solid grey
+}
+
+.etch-square {
+    background-color: green;
+    flex-shrink: 0;
+}
+
+.darker {
+    background-color: black;
+}
