@@ -9,14 +9,11 @@
     width: 900px;
     height: 900px;
     margin: 100px auto;
-    border: 3px solid grey
+    border: 3px solid grey;
+    background-color: black;
 }
 
 .etch-square {
-    background-color: green;
+    background-color: grey;
     flex-shrink: 0;
-}
-
-.darker {
-    background-color: black;
 }

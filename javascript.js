@@ -21,8 +21,14 @@ function createGrid(pixelWidth){
 
         etchSquare.style.width = `${900 / pixelWidth}px`
         etchSquare.style.height = `${900 / pixelWidth}px`
+        etchSquare.style.opacity = 1
+
     
-        etchSquare.addEventListener('mouseenter', (e) => e.target.classList.add('darker'))
+        etchSquare.addEventListener('mouseenter', (e) => {
+            e.target.style.opacity = Math.max(0,e.target.style.opacity - 0.1)
+            e.target.style.backgroundColor = `hsl(${Math.random()*360},100%,50%)`
+        }
+        )
         etchContainer.appendChild(etchSquare)
     }
 
